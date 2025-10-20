@@ -50,17 +50,17 @@
      \q
 
 
-5. **Настройте переменные окружения**:
-   Создайте файл `.env` в корне проекта:env
-   SECRET_KEY=django-insecure-4=ddr=^3qo#%59xn$k!_!n0r)ilp3zmva)q(y4vtikk_yi%&v*
-   DB_NAME=test_db
-   DB_USER=user
-   DB_PASSWORD=1
-   DB_HOST=localhost
-   DB_PORT=5432
-   EMAIL_HOST_USER=amangulov03@gmail.com
-   EMAIL_HOST_PASSWORD=sien gflz vaaa aqxp
-   HOST_FOR_SEND_MAIL=http://localhost:8000
+5. **Настройте переменные окружения**:  
+   Создайте файл `.env` в корне проекта:env  
+   SECRET_KEY=django-insecure-4=ddr=^3qo#%59xn$k!_!n0r)ilp3zmva)q(y4vtikk_yi%&v*  
+   DB_NAME=test_db  
+   DB_USER=user  
+   DB_PASSWORD=1  
+   DB_HOST=localhost  
+   DB_PORT=5432  
+   EMAIL_HOST_USER=amangulov03@gmail.com  
+   EMAIL_HOST_PASSWORD=sien gflz vaaa aqxp  
+   HOST_FOR_SEND_MAIL=http://localhost:8000  
 
 6. **Примените миграции**:
    python manage.py migrate
