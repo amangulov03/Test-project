@@ -85,57 +85,7 @@
 
 *Требуется токены (ДА/Нет)*\
 `POST` | `/api/v1/users/register/` - Регистрация нового пользователя | Нет |\
-`GET` | `/api/v1/account/activate/?u=<код_активации>` - Активация аккаунта | Нет |\## Установка
-1. **Клонируйте репозиторий**:
-```
-   git clone <URL_репозитория>
-   cd <директория_проекта>
-```
-
-2. **Создайте виртуальное окружение**:
-```
-   python -m venv venv
-   source venv/bin/activate  # Для Windows: venv\Scripts\activate
-```
-
-3. **Установите зависимости**:
-   Создайте файл `requirements.txt` с содержимым:text
-   djangorestframework
-   djangorestframework-simplejwt
-   psycopg2-binary
-   python-decouple
-   requests
-   django-filter
-
-   *Затем выполните:*\
-   pip install -r requirements.txt
-
-4. **Настройте базу данных**:
-   - Убедитесь, что PostgreSQL установлен и запущен.
-   - Создайте базу данных `test_db`:
-
-     psql -U postgres
-     CREATE DATABASE test_db;
-     \q
-
-
-5. **Настройте переменные окружения**:  
-   Создайте файл `.env` в корне проекта:env  
-   SECRET_KEY=django-insecure-4=ddr=^3qo#%59xn$k!_!n0r)ilp3zmva)q(y4vtikk_yi%&v*  
-   DB_NAME=test_db  
-   DB_USER=user  
-   DB_PASSWORD=1  
-   DB_HOST=localhost  
-   DB_PORT=5432  
-   EMAIL_HOST_USER=amangulov03@gmail.com  
-   EMAIL_HOST_PASSWORD=sien gflz vaaa aqxp  
-   HOST_FOR_SEND_MAIL=http://localhost:8000  
-
-6. **Примените миграции**:
-   python manage.py migrate
-
-7. **Запустите сервер**:
-   python manage.py runserver
+`GET` | `/api/v1/account/activate/?u=<код_активации>` - Активация аккаунта | Нет |\
 `POST` | `/api/v1/auth/token/` - Получение токенов (вход) | Нет |\
 `POST` | `/api/v1/auth/token/refresh/` | Обновление access-токена | Нет |\
 `GET` | `/api/v1/users/me/` - Просмотр профиля | Да |\
